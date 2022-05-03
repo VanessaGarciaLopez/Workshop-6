@@ -34,7 +34,7 @@ Se utilizó una raspberry pi conectada a un led y un sensor bmp280, ademas de es
 En el aspecto del software se utilizo node.js ya que ofrece un motor de ejecución robusto a pesar de estar escrito en un lenjuage de alto nivel como lo es javascript.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/SadPac/Parcial2/main/Diagrama.png">
+  <img src="https://raw.githubusercontent.com/SadPac/Workshop-6/main/img/node.png">
 </p>
 
 ## Conectividad
