@@ -46,6 +46,7 @@ Para la conectividad se utilizó el IoT hub provisto por Azure, este permite cre
 </p>
 
 ## Análisis de Datos
+Se crea el recurso de Stream Analytics job y se conecta con el recurso de trabajo para obtener los datos, conectamos las salidas a power BI para que se pueda observar los resultados de estos análisis
 
 
 
