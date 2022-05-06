@@ -13,7 +13,7 @@ El modelo planteado para este taller esta compuesto por 4 componentes, estos son
 
 ## Sensor
 
-El sensor utilizado fue el bmp280, este es un sensor de presión, temperatura y humedad.
+El sensor utilizado fue el bmp280, este es un sensor ambiental que es capaz de medir presión, temperatura y humedad.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/SadPac/Workshop-6/main/img/bme280.jpg">
@@ -23,7 +23,7 @@ El sensor utilizado fue el bmp280, este es un sensor de presión, temperatura y 
 
 ### Hardware
 
-Se utilizó una raspberry pi conectada a un led y un sensor bmp280, ademas de esto se utilizó una protoboard para realizar un prototipado rápido que incluyera todos los elementos necesarios para el funcionamiento del sistema IoT.
+Se utilizó una Raspberry Pi 3 conectada a un led y un sensor bmp280, ademas de esto se utilizó una protoboard para realizar un prototipado rápido que incluyera todos los elementos necesarios para el funcionamiento del sistema IoT.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/SadPac/Workshop-6/main/img/raspberrypi3.jpg">
@@ -31,7 +31,7 @@ Se utilizó una raspberry pi conectada a un led y un sensor bmp280, ademas de es
 
 ### Software
 
-En el aspecto del software se utilizo node.js ya que ofrece un motor de ejecución robusto a pesar de estar escrito en un lenjuage de alto nivel como lo es javascript.
+En el aspecto del software para el sistema IoT se utilizo node.js ya que ofrece un motor de ejecución robusto a pesar de estar escrito en un lenjuage de alto nivel como lo es ecmascript 6.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/SadPac/Workshop-6/main/img/node.png">
@@ -39,7 +39,7 @@ En el aspecto del software se utilizo node.js ya que ofrece un motor de ejecuci�
 
 ## Conectividad
 
-Para la conectividad se utilizo el IoT hub provisto por Azure, este permite crear una gran cantidad de dispositivos utilizando una interfaz muy simple y amigable la cual permite realizar estas conexiones de una forma rápida y efectiva utilizando los strings de conexión que son proveidos por la misma plataforma, una vez obtenido este string se procede a introducirlo en el codigo node.js que se ejecutara en la raspberry pi 3, en el cual solamente reemplazamos el string en el sitio donde deberia a ir y la conexión procede de una forma exitosa, esta conexión fue realizada mediante HTTP.
+Para la conectividad se utilizó el IoT hub provisto por Azure, este permite crear una gran cantidad de dispositivos utilizando una interfaz muy simple y amigable la cual permite realizar estas conexiones de una forma rápida y efectiva utilizando los strings de conexión que son provistos por la misma plataforma, una vez obtenido este string se procede a introducirlo en el codigo node.js que se ejecutara en la Raspberry Pi 3, en el cual solamente reemplazamos el string en el sitio donde deberia ir y la conexión procede de una forma exitosa, esta conexión fue realizada mediante HTTP.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/SadPac/Workshop-6/main/img/stringconexion.png">
@@ -63,7 +63,7 @@ En este caso el LED se enciende cada vez que la raspberry pi 3 envia con éxito 
   <img src="https://github.com/SadPac/Workshop-6/blob/main/img/sendmessage.png">
 </p>
 
-A su vez, la acción de comunicación conel IoT hub se realiza cada vez que el sensor le envía a la Raspberry Pi 3 una alerta de cambio de temperatura, en esta imagen se puede observar el código que genera estas instrucciones.
+A su vez, la acción de comunicación con el IoT hub se realiza cada vez que el sensor le envía a la Raspberry Pi 3 una alerta de cambio de temperatura, en esta imagen se puede observar el código que genera estas instrucciones.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/SadPac/Workshop-6/main/img/getmessage.png">
